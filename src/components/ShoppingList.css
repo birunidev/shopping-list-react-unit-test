@@ -1,0 +1,38 @@
+.shopping-list__wrapper {
+  @apply my-12 w-11/12 lg:w-1/2 mx-auto;
+  height: 280px;
+}
+.shopping-list__wrapper::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.shopping-list__wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.shopping-list__wrapper::-webkit-scrollbar-thumb {
+  @apply bg-purple-300 rounded;
+}
+
+/* Handle on hover */
+.shopping-list__wrapper::-webkit-scrollbar-thumb:hover {
+  @apply bg-purple-200;
+}
+
+.shopping-list__item {
+  @apply flex justify-between items-center py-3 px-4 bg-pink-300 hover:opacity-90 cursor-pointer rounded my-2 text-purple-400 font-medium w-10/12 mx-auto;
+}
+
+.shopping-list__item button {
+  @apply focus:outline-none hover:bg-pink-50 p-2;
+}
+.shopping-list__item svg {
+  width: 20px;
+  height: 20px;
+  transition: 0.2s ease-in all;
+}
+.shopping-list__item svg:hover {
+  transform: scale(1.3);
+}
